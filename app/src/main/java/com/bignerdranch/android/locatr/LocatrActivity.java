@@ -3,11 +3,10 @@ package com.bignerdranch.android.locatr;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
+
 
 public class LocatrActivity extends SingleFragmentActivity {
     private static final int REQUEST_ERROR = 0;
@@ -34,6 +33,7 @@ public class LocatrActivity extends SingleFragmentActivity {
                                     finish();
                                 }
                             });
+
             errorDialog.show();
         }
     }
